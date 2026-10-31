@@ -1,0 +1,19 @@
+{
+  "name": "imovies",
+  "version": "1.0.0",
+  "description": "IMovies Cinema Ticket Booking Website - MERN Stack",
+  "main": "server/server.js",
+  "scripts": {
+    "install-all": "npm --prefix server install && npm --prefix client install && npm install",
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"blue,green\" \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "seed": "npm --prefix server run seed",
+    "test": "npm --prefix server test",
+    "start": "npm --prefix server start"
+  },
+  "keywords": ["mern", "cinema", "booking", "movie-tickets", "socket.io", "react"],
+  "author": "IMovies Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
